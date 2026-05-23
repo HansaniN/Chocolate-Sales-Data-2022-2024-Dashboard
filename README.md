@@ -1,36 +1,146 @@
 # Corporate Sales Performance Dashboard (Excel)
 
-An interactive Microsoft Excel dashboard designed to analyze and visualize global sales data, track key performance indicators (KPIs), and uncover regional product trends. This project demonstrates end-to-end data processing, from raw data cleaning to interactive data modeling and professional UI/UX design in Excel.
+An interactive Microsoft Excel dashboard designed to analyze and visualize global chocolate sales data, monitor key business KPIs, and uncover regional product performance trends. This project demonstrates an end-to-end Excel analytics workflow including data cleaning, transformation, KPI modeling, pivot-based aggregation, and interactive dashboard development.
 
-![Dashboard Preview](image_e6cdb9.png) *(Note: Replace this with your actual image path or GitHub URL once uploaded)*
+![Dashboard Preview](image_e6cdb9.png)
 
-## 📊 Business Metrics & Features
-* **Dynamic KPIs:** Real-time tracking of Total Revenue ($19.79M), Total Boxes Shipped (540K), and Unique Product Lines (22).
-* **Interactive Slicers:** Allows stakeholders to seamlessly filter the entire dashboard by **Year** and **Country** with a single click.
-* **Sales Person Analysis:** Cleanly visualizes individual sales performance using optimized data labels.
-* **Time-Series Insights:** Tracks sales fluctuations across different months and quarters to identify seasonal trends.
-* **Product & Regional Breakdown:** Identifies top-performing chocolate categories and geographic market distributions (UK, India, Canada, Australia, USA, NZ).
+---
 
-## 🛠️ Data Cleaning & Engineering Process
-Raw data is rarely analysis-ready. To maximize chart readability and model accuracy, the following data transformation techniques were applied within Excel:
+# 📊 Business Metrics & Features
 
-1.  **Primary Key Generation:** Manually engineered a unique `Order_ID` column to ensure robust data integrity and precise cross-referencing.
-2.  **Date Parsing:** Utilized the **Text-to-Columns** feature to extract and isolate `Month` values from standard date strings, enabling cleaner time-series aggregation.
-3.  **String Manipulation (Flash Fill):** Extracted only the **First Names** of the sales representatives. This significantly optimized horizontal bar chart real estate, preventing text overlap and ensuring a clean visual layout.
-4.  **Pivot Architecture:** Built structured intermediate pivot tables to aggregate multi-year transactional rows into responsive chart sources.
+### Dynamic KPI Monitoring
+Track core business metrics in real time:
+- **Total Revenue:** $19.79M
+- **Total Boxes Shipped:** 540K
+- **Unique Product Lines:** 22
 
-## 📈 Dashboard Design Best Practices Applied
-* **Z-Pattern Layout:** Placed high-level aggregate KPIs at the top left, naturally guiding the viewer's eye down into granular visual trends.
-* **Clutter Reduction:** Removed unnecessary gridlines, chart borders, and default field buttons to achieve a modern, software-like UI.
-* **Strategic Typography:** Created a clear visual hierarchy using distinct font sizes and weights for titles, metrics, and labels.
+### Interactive Filtering
+Integrated **Year** and **Country** slicers allow users to dynamically filter the entire dashboard for focused analysis and faster business exploration.
 
-## 📁 Repository Structure
-* `CS3.xlsx`: The core Excel workbook containing the raw data, pivot tables, and final interactive dashboard.
-* `image_e6cdb9.png`: Screenshot preview of the dashboard interface.
-* `README.md`: Project documentation.
+### Sales Performance Analysis
+Visualizes individual sales representative performance using optimized layouts and readable labeling techniques.
 
-## 🚀 How to Interact with the Dashboard
-1. Download or clone the `CS3.xlsx` file.
-2. Open the file in Microsoft Excel (2019 or later recommended for full Slicer compatibility).
-3. Ensure macros/content are enabled if prompted.
-4. Use the **Year** and **Country** slicers on the left panel to dynamically filter and explore the sales metrics.
+### Time-Series Trend Analysis
+Tracks monthly and quarterly sales fluctuations to identify seasonality patterns and revenue trends over time.
+
+### Product & Regional Insights
+Highlights top-performing chocolate categories and geographic market contributions across:
+- UK
+- India
+- Canada
+- Australia
+- USA
+- New Zealand
+
+---
+
+# 🛠️ Data Cleaning & Engineering Process
+
+Raw data is rarely analysis-ready. To improve model reliability, readability, and dashboard responsiveness, several transformation techniques were applied within Excel.
+
+### 1. Primary Key Generation
+Manually engineered a unique `Order_ID` column to maintain data integrity and enable accurate cross-referencing across pivot structures.
+
+### 2. Date Transformation
+Extracted `Month` values from raw date fields using Excel’s **Text-to-Columns** functionality, then converted numeric month values into readable month names to improve time-series analysis and chart readability.
+
+### 3. String Manipulation Using Flash Fill
+Extracted only the **First Names** of sales representatives using Excel Flash Fill. This optimized chart spacing and prevented label overlap within horizontal visualizations.
+
+### 4. Pivot Data Modeling
+Constructed structured intermediate pivot tables to aggregate large transactional datasets into efficient and responsive chart-ready data models.
+
+---
+
+# 📈 Dashboard Design Best Practices Applied
+
+### Z-Pattern Layout
+Positioned high-level KPIs at the top-left section to naturally guide user attention toward deeper analytical insights.
+
+### Clutter Reduction
+Removed unnecessary:
+- Gridlines
+- Chart borders
+- Default pivot field buttons
+
+This created a cleaner and more modern software-style dashboard interface.
+
+### Visual Hierarchy & Typography
+Applied strategic font sizing, weight variation, and spacing to establish a clear hierarchy between:
+- Titles
+- KPIs
+- Labels
+- Supporting metrics
+
+### Consistent Color Strategy
+Used a cohesive dark-themed color palette to improve readability and maintain professional visual consistency.
+
+---
+
+# 💡 Key Insights Derived
+
+- Australia and the UK generated the highest overall sales revenue.
+- Monthly revenue trends revealed noticeable seasonal fluctuations.
+- A limited number of product categories contributed disproportionately to total revenue.
+- Sales performance varied significantly between representatives and regions.
+
+---
+
+# 🧰 Excel Features & Skills Demonstrated
+
+- Pivot Tables
+- Pivot Charts
+- Slicers
+- KPI Card Design
+- Data Cleaning
+- Flash Fill
+- Text-to-Columns
+- Dashboard UI/UX Design
+- Time-Series Analysis
+- Interactive Reporting
+
+---
+
+# 📁 Repository Structure
+
+```text
+├── CS3.xlsx
+├── image_e6cdb9.png
+└── README.md
+```
+
+### Files Included
+
+| File | Description |
+|---|---|
+| `CS3.xlsx` | Main Excel workbook containing raw data, pivot tables, calculations, and the final dashboard |
+| `image_e6cdb9.png` | Dashboard preview screenshot |
+| `README.md` | Project documentation |
+
+---
+
+# 🚀 How to Use the Dashboard
+
+1. Download or clone this repository.
+2. Open `CS3.xlsx` using Microsoft Excel (2019 or later recommended).
+3. Enable editing/content if prompted.
+4. Use the **Year** and **Country** slicers to interactively filter dashboard insights.
+
+---
+
+# 🎯 Project Objective
+
+The goal of this project was to simulate a professional business intelligence reporting workflow entirely within Microsoft Excel while emphasizing:
+- Data storytelling
+- Dashboard usability
+- Interactive analytics
+- Clean visual design
+- Business insight generation
+
+---
+
+# 📌 Author
+
+Hansani Nawarathna
+
+Aspiring Data Analyst | UI/UX Enthusiast | Excel Dashboard Developer
