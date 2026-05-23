@@ -2,7 +2,7 @@
 
 An interactive Microsoft Excel dashboard designed to analyze and visualize global chocolate sales data, monitor key business KPIs, and uncover regional product performance trends. This project demonstrates an end-to-end Excel analytics workflow including data cleaning, transformation, KPI modeling, pivot-based aggregation, and interactive dashboard development.
 
-![Dashboard Preview](Screenshot(705).png)
+![Dashboard Preview](Dashboard.png)
 
 
 ---
