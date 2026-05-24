@@ -34,6 +34,7 @@ The dashboard dynamically tracks key business metrics including:
 - **Total Boxes Shipped:** `540K+`
 - **Top Performing Product**
 - **Top Performing Salesperson**
+- **Top Performing Country**
 
 ---
 
@@ -42,9 +43,10 @@ The dashboard dynamically tracks key business metrics including:
 Implemented dynamic Excel slicers allowing users to instantly filter dashboard insights by:
 
 - **Year (2022–2024)**
-- **Product Category**
+- **Month**
+- **Country**
 
-This enables focused regional and product-level analysis in real time.
+This enables focused, timely, and country-level analysis in real time.
 
 ---
 
@@ -271,7 +273,7 @@ The dataset was cleaned, transformed, and modeled entirely within Microsoft Exce
 📁 Chocolate-Sales-Dashboard
 │
 ├── CS3.xlsx
-├── image_4711c8.png
+├── Ch_Dashboard.png
 └── README.md
 ```
 
@@ -282,7 +284,7 @@ The dataset was cleaned, transformed, and modeled entirely within Microsoft Exce
 | File | Description |
 |---|---|
 | `CS3.xlsx` | Main Excel workbook containing raw data, transformations, Pivot Tables, and final dashboard |
-| `image_4711c8.png` | Dashboard preview screenshot |
+| `Ch_Dashboard.png` | Dashboard preview screenshot |
 | `README.md` | Project documentation |
 
 ---
