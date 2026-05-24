@@ -1,8 +1,8 @@
 # 🍫 Chocolate Sales Performance Dashboard (Excel)
 
-An interactive Microsoft Excel dashboard built to analyze, visualize, and monitor global chocolate sales performance across multiple countries, products, and sales representatives.
+An interactive Microsoft Excel dashboard designed to analyze, visualize, and monitor global chocolate sales performance across multiple countries, products, and sales representatives.
 
-This project demonstrates an end-to-end Excel analytics workflow — transforming raw transactional data into a clean, structured, and interactive business intelligence dashboard through data cleaning, transformation, Pivot Table modeling, KPI engineering, and dashboard UI/UX design.
+This project demonstrates an end-to-end Excel analytics workflow — transforming raw transactional data into a clean, structured, and interactive business intelligence solution through data cleaning, transformation, Pivot Table modeling, KPI engineering, and dashboard UI/UX design.
 
 ---
 
@@ -14,45 +14,44 @@ This project demonstrates an end-to-end Excel analytics workflow — transformin
 
 # 📌 Business Problem
 
-The objective of this project was to develop an interactive reporting solution capable of:
+The goal of this project was to design a structured analytical dashboard that enables stakeholders to:
 
-- Monitoring overall sales performance
-- Identifying top-performing products and regions
-- Tracking shipment trends over time
-- Evaluating salesperson contributions
-- Enabling quick executive-level business insights through dynamic filtering
-
----
-
-# 🚀 Key Features & Dashboard Functionality
-
-## 📈 KPI Monitoring
-
-The dashboard dynamically tracks key business metrics including:
-
-- **Total Revenue:** `$19.79M`
-- **Total Boxes Shipped:** `540K+`
-- **Top Performing Product**
-- **Top Performing Salesperson**
-- **Top Performing Country**
+- Monitor overall sales performance across regions
+- Identify top-performing products and countries
+- Track shipment and revenue trends over time
+- Evaluate salesperson contribution to total revenue
+- Enable fast, interactive decision-making using slicers
 
 ---
 
-## 🎛️ Interactive Slicers
+# 🚀 Key Features & Functionality
 
-Implemented dynamic Excel slicers allowing users to instantly filter dashboard insights by:
+## 📈 KPI Summary
+The dashboard dynamically tracks core business KPIs:
 
-- **Year (2022–2024)**
-- **Month**
-- **Country**
-
-This enables focused, timely, and country-level analysis in real time.
+- **Total Revenue:** $19.79M  
+- **Total Boxes Shipped:** 540K+  
+- **Top Performing Product**  
+- **Top Performing Salesperson**  
+- **Top Revenue-Contributing Country**
 
 ---
 
-## 🌍 Regional Sales Insights
+## 🎛️ Interactive Filtering (Slicers)
 
-Analyzes performance across multiple international markets including:
+The dashboard includes fully dynamic slicers for:
+
+- Year (2022–2024)
+- Month
+- Country
+
+These enable real-time filtering and instant insight generation across all visuals.
+
+---
+
+## 🌍 Regional Performance Analysis
+
+Sales performance is analyzed across key global markets:
 
 - Australia
 - Canada
@@ -61,201 +60,106 @@ Analyzes performance across multiple international markets including:
 - United Kingdom
 - United States
 
-The dashboard highlights regional revenue contribution and shipment distribution patterns.
+This helps identify regional demand strength and revenue concentration patterns.
 
 ---
 
-## 🏆 Product & Salesperson Analysis
+## 🏆 Product & Salesperson Insights
 
-Integrated ranking visualizations to identify:
+The dashboard highlights performance rankings for:
 
-- Best-performing chocolate products
+- Best-selling chocolate products
 - Highest revenue-generating sales representatives
-- Shipment contribution by salesperson
+- Product-level contribution to overall sales
 
-Products such as:
-
-- *Smooth Silky Salty*
-- *Raspberry Choco*
-- *Milk Choco*
-
-emerged as top-performing categories.
-
----
-
-# 🛠️ Data Cleaning & Engineering Process
-
-Raw datasets are rarely analysis-ready. To improve data quality, readability, and dashboard responsiveness, several transformation techniques were applied directly within Microsoft Excel.
-
----
-
-## 1️⃣ Primary Key Creation (`Order_ID`)
-
-Manually engineered a unique sequential `Order_ID` column to:
-
-- Maintain row-level data integrity
-- Ensure reliable aggregation
-- Prevent duplicate ambiguity during Pivot Table modeling
-
----
-
-## 2️⃣ Date Transformation (`Text to Columns`)
-
-Used Excel’s **Text-to-Columns** feature to extract raw month numbers from date fields.
-
-The numeric month values were then manually mapped and replaced with full month names such as:
-
-- January
-- February
-- March
-
-This significantly improved:
-
-- Time-series readability
-- Dashboard interpretability
-- Chart presentation quality
-
----
-
-## 3️⃣ String Manipulation (`Flash Fill`)
-
-Utilized Excel’s **Flash Fill** feature to extract only the first names of sales representatives from full-name strings.
-
-This optimization:
-
-- Reduced label clutter
-- Improved chart readability
-- Created cleaner leaderboard visualizations
-
----
-
-## 4️⃣ Pivot Table Data Modeling
-
-Built structured intermediate Pivot Tables and Pivot Charts to:
-
-- Aggregate transactional records
-- Power dashboard visualizations
-- Create dynamic slicer-connected reporting architecture
-
----
-
-# 📈 Dashboard Design & Data Visualization Principles Applied
-
-## ✅ Visual Hierarchy
-
-Strategically positioned KPI cards at the top of the dashboard to immediately surface high-priority business metrics.
-
----
-
-## ✅ Clutter Reduction
-
-Removed:
-
-- Gridlines
-- Unnecessary chart borders
-- Default Pivot field buttons
-
-to create a cleaner, modern BI-style interface.
-
----
-
-## ✅ Consistent Theme & Branding
-
-Applied a professional dark-themed color palette inspired by premium chocolate branding to improve:
-
-- Visual consistency
-- Readability
-- Dashboard aesthetics
-
----
-
-## ✅ Readability Optimization
-
-Used:
-
-- Flash Fill name shortening
-- Proper spacing
-- Clean typography
-- Balanced chart sizing
-
-to maximize information clarity without overcrowding the dashboard.
-
----
-
-# 💡 Strategic Business Insights Discovered
-
-## 🌟 Top Performing Market
-
-Australia emerged as the strongest-performing region with:
-
-- **$3.65M+ revenue**
-- **99K+ boxes shipped**
-
-making it the largest contributor to overall sales performance.
-
----
-
-## 🍫 Product Performance Trends
-
-Premium and specialty chocolate products significantly outperformed standard variants, indicating strong consumer preference for gourmet flavor profiles.
-
-Top-performing products included:
-
+Top products identified include:
 - Smooth Silky Salty
 - Raspberry Choco
 - Milk Choco
 
 ---
 
-## 📦 Stable Year-Over-Year Growth
+# 🛠️ Data Cleaning & Transformation Process
 
-Sales and shipment trends demonstrated consistent growth from:
-
-- 2022
-- 2023
-- 2024
-
-suggesting stable market expansion and healthy business performance across global regions.
+Raw transactional data was transformed into an analytics-ready dataset using Excel:
 
 ---
 
-# 🧰 Excel Skills & Features Demonstrated
+## 1️⃣ Primary Key Creation (`Order_ID`)
+A unique sequential `Order_ID` column was manually created to:
+- Ensure data integrity
+- Support structured aggregation in Pivot Tables
+- Prevent duplication errors during analysis
 
-- Pivot Tables
-- Pivot Charts
-- Excel Slicers
-- KPI Card Design
-- Dashboard UI/UX Design
-- Flash Fill
-- Text-to-Columns
-- Data Cleaning
-- Data Transformation
-- Time-Series Analysis
+---
+
+## 2️⃣ Date Transformation (Text to Columns)
+Month values were extracted from raw date fields using **Text-to-Columns**, then converted into readable month names.
+
+This improved:
+- Time-series clarity
+- Chart readability
+- Dashboard usability
+
+---
+
+## 3️⃣ Text Optimization (Flash Fill)
+Used Excel Flash Fill to extract first names from salesperson full names.
+
+Benefits:
+- Cleaner labels
+- Improved dashboard readability
+- Reduced visual clutter in charts
+
+---
+
+## 4️⃣ Pivot Table Modeling
+Built structured Pivot Tables to:
+- Aggregate sales data
+- Power dashboard visuals
+- Enable slicer-driven interactivity
+
+---
+
+# 📈 Design & UX Principles Applied
+
+- Clean KPI-first layout for executive readability
+- Removed gridlines and visual noise
+- Consistent dark theme for professional BI look
+- Balanced spacing for better visual hierarchy
+- Optimized chart labeling for clarity
+
+---
+
+# 💡 Key Insights
+
+- Australia emerged as the top revenue-generating country
+- Premium chocolate products outperformed standard variants
+- Sales distribution shows stable year-over-year growth (2022–2024)
+- A small number of products contribute to a large share of revenue
+
+---
+
+# 🧰 Tools & Skills Demonstrated
+
+- Microsoft Excel
+- Pivot Tables & Pivot Charts
+- Data Cleaning & Transformation
+- KPI Design
+- Dashboard Development
+- Data Visualization
 - Business Intelligence Reporting
-- Interactive Dashboard Development
-
----
-
-# 💻 Tools & Technologies Used
-
-| Tool | Purpose |
-|---|---|
-| Microsoft Excel | Data cleaning, transformation, modeling, and dashboard creation |
-| Pivot Tables | Data aggregation and analysis |
-| Pivot Charts | Dynamic visualization |
-| Excel Slicers | Interactive dashboard filtering |
-| Flash Fill | String transformation and readability optimization |
+- Flash Fill & Text-to-Columns
 
 ---
 
 # 📚 Dataset Source
 
-This project uses the publicly available Chocolate Sales dataset from Kaggle:
+This project uses the publicly available dataset from Kaggle:
 
-- [Chocolate Sales Dataset on Kaggle](https://www.kaggle.com/datasets/saidaminsaidaxmadov/chocolate-sales)
+👉 https://www.kaggle.com/datasets/saidaminsaidaxmadov/chocolate-sales
 
-The dataset contains transactional chocolate sales records including:
-
+The dataset contains:
 - Salesperson
 - Country
 - Product
@@ -263,13 +167,11 @@ The dataset contains transactional chocolate sales records including:
 - Revenue
 - Boxes Shipped
 
-The dataset was cleaned, transformed, and modeled entirely within Microsoft Excel for dashboard development and business insight generation.
-
 ---
 
 # 📂 Project Structure
 
-```text
+```
 📁 Chocolate-Sales-Dashboard
 │
 ├── CS3.xlsx
@@ -279,41 +181,28 @@ The dataset was cleaned, transformed, and modeled entirely within Microsoft Exce
 
 ---
 
-# 📄 Files Included
+# 🚀 How to Use
 
-| File | Description |
-|---|---|
-| `CS3.xlsx` | Main Excel workbook containing raw data, transformations, Pivot Tables, and final dashboard |
-| `Ch_Dashboard.png` | Dashboard preview screenshot |
-| `README.md` | Project documentation |
-
----
-
-# 🚀 How to Use the Dashboard
-
-1. Download or clone this repository.
-2. Open the `CS3.xlsx` workbook using Microsoft Excel.
-3. Enable editing/content if prompted.
-4. Use the slicers to dynamically filter and explore sales insights.
-
-> Recommended: Microsoft Excel 2019 or later for full slicer compatibility.
+1. Clone or download this repository
+2. Open `CS3.xlsx` in Microsoft Excel (2019+ recommended)
+3. Enable editing/content if prompted
+4. Use slicers (Year, Month, Country) to explore insights
 
 ---
 
 # 🎯 Project Objective
 
-The primary goal of this project was to simulate a real-world business intelligence workflow entirely within Microsoft Excel while emphasizing:
+This project simulates a real-world Business Intelligence workflow in Excel by focusing on:
 
 - Interactive reporting
-- Data storytelling
-- Executive dashboard design
+- Clean data modeling
+- Visual storytelling
+- Executive-level dashboard design
 - Analytical thinking
-- Data visualization best practices
 
 ---
 
 # 📌 Author
 
-### Hansani Nawarathna
-
+**Hansani Nawarathna**  
 Aspiring Data Analyst | Excel Dashboard Developer | UI/UX Enthusiast
